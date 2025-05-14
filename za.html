@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Записаться - Brows & Lash</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFAF5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles (Assuming you have a common header) */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 110px;
+            height: auto;
+            margin-right: 80px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 1;
+            margin: 1;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.2em;
+            /* Increased font size */
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .contact-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .contact-row img {
+            width: 20px;
+            height: auto;
+            margin-right: 5px;
+        }
+
+        .contact-row p {
+            margin-right: 15px;
+        }
+
+        .contact-info-wrapper {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .contact-info-wrapper img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        /* Form Styles */
+        .appointment-form {
+            background-color: #f2e8dd;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .appointment-form h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="annaunisova@mail.ru"],
+        .form-group input[type="89253830446"],
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group select {
+            height: 40px;
+        }
+
+        button {
+            background-color: #855B35;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button:hover {
+            background-color: #704a2a;
+        }
+
+        /* Footer Styles (Assuming you have a common footer) */
+        footer {
+            background-color: #f2e8dd;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer img {
+            width: 110px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="appointment-form">
+            <h2>Записаться на прием</h2>
+            <form id="appointmentForm" action="index.html" method="post" onsubmit="showMessageAndRedirect(); return false;">
+                <div class="form-group">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Ваш телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Выберите услугу:</label>
+                    <select id="service" name="service" required>
+                        <option value="">-- Выберите услугу --</option>
+                        <option value="brow_correction"> Ламинирование ресниц</option>
+                        <option value="brow_dye">Окрашивание бровей</option>
+                        <option value="lash_extension">Наращивание ресниц</option>
+                        <option value="brow_dye">Ламинирование бровей</option>
+                        <!-- Add more services here -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointment_date">Выберите дату:</label>
+                    <input type="date" id="appointment_date" name="appointment_date" required>
+                </div>
+
+                 <div class="form-group">
+                    <label for="appointment_time">Выберите время:</label>
+                    <select id="appointment_time" name="appointment_time" required>
+                        <option value="">-- Выберите время --</option>
+                        <option value="10:00">10:00</option>
+                        <option value="10:30">11:00</option>
+                        <option value="11:00">12:00</option>
+                        <option value="11:30">13:00</option>
+                        <option value="11:30">14:00</option>
+                        <option value="11:30">15:00</option>
+                        <option value="11:30">16:00</option>
+                        <option value="11:30">17:00</option>
+                        <option value="11:30">18:00</option>
+                        <option value="11:30">19:00</option>
+                
+                        <!-- Add more time slots here -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Дополнительные пожелания:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        function showMessageAndRedirect() {
+            alert("Вы записаны!");
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+
+</html>

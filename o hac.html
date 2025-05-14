@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нас - Brows & Lash</title>
+  <style>
+    body {
+      font-family: Source Serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFFAF5;
+      min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+      display: flex;
+      flex-direction: column;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      flex: 1; /* Let the container take up the remaining space */
+    }
+    /* Header Styles (Assuming you have a common header) */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      width: 110px;
+      height: auto;
+      margin-right: -150px; /* Reduced margin here */
+    }
+    nav ul {
+      list-style: none;
+      padding: 1;
+      margin: 1;
+      display: flex;
+    }
+    nav li {
+      margin-left: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.2em; /* Default font size for nav links */
+    }
+
+    .contact-info-wrapper {
+        display: flex;
+        align-items: flex-start; /* Align to the top */
+        justify-content: flex-end; /* Align to the right */
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-end; /* Align items to the right */
+        text-align: right; /* Ensure text within is aligned to the right */
+    }
+
+    .contact-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 7px; /* Reduced margin */
+        justify-content: flex-end; /* Align content to the right */
+    }
+
+    .contact-row img {
+        width: 25px; /* Increased icon size */
+        height: auto;
+        margin-right: 5px;
+    }
+
+     .contact-info p {
+        font-size: 1.3em; /* Increased font size for contact info */
+        margin: 5px 0; /* Add some vertical spacing */
+    }
+
+    /* About Us Section Styles */
+    .about-us-section {
+      display: flex;
+      gap: 20px; /* Space between image and text */
+    }
+
+    .about-image {
+      flex: 1;
+    }
+    .about-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .about-content {
+      flex: 1;
+    }
+
+    .about-content h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .about-content p {
+      font-size: 1.1em;
+      line-height: 1.6; /* Improved readability */
+    }
+
+    .about-images {
+      display: flex; /*Display small pictures in line*/
+      gap: 10px; /*Space between them*/
+      margin-top: 20px; /*Move from the text above*/
+    }
+
+    .about-images img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .button {
+      background-color: transparent;
+      color: #333;
+      border: 1px solid #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    /* Footer Styles (Assuming you have a common footer) */
+    footer {
+      background-color: #f2e8dd;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto; /* Push the footer to the bottom */
+    }
+    footer p {
+      margin: 0;
+    }
+    footer img {
+      width: 110px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="лого2.png" alt="Logo">
+      <h1></h1> <!-- Replace with actual brand if needed -->
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="o hac.html">О нас</a></li>
+        <li><a href="yclygi.html">Услуги</a></li>
+        <li><a href="kon.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="contact-info-wrapper">
+        <div class="contact-info">
+            <div class="contact-row">
+              
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="about-us-section">
+      <div class="about-image">
+        <img src="ст6.jpg" alt="About Us Image">
+      </div>
+      <div class="about-content">
+        <h2>О нас</h2>
+        <p>Студия Brows&Lash - это место где наши феи и феячат. Дарят своим гостям хорошее настроение. Создают ухоженные брови и привлекательные ресницы, соблюдая современный стиль и подчеркивая вашу индивидуальность.</p>
+        <a href="za.html" class="button">Записаться</a>
+
+        <div class="about-images">
+          <img src="ст5.jpg" alt="Small Image 1">
+          <img src="ст4.jpg" alt="Small Image 2">
+          <img src="ст7.jpg" alt="Small Image 3">
+          <img src="ст8.jpg" alt="Small Image 4">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div>
+      <h1>BROWS&LASH</h1>
+      <p>ВТ-СБ: 10:00-19:00</p>
+      <p>ВС-ПН: выходной</p>
+    </div>
+    <img src="лого2.png" alt="Logo">
+  </footer>
+
+</body>
+</html>

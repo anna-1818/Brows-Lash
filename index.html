@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brows & Lash</title>
+  <style>
+    body {
+      font-family: Source Serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFFAF5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    /* Header Styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      width: 115px; /* Adjust as needed */
+      height: auto;
+      margin-right: 50px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 1;
+      margin: 1;
+      display: flex;
+    }
+    nav li {
+      margin-left: 2550px;
+    }
+
+   nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.4em; /* Increased font size */
+}
+    }
+
+   .contact-info {
+        display: flex; /* Align rows horizontally */
+        align-items: center; /* Vertically center rows */
+        flex-direction: column;
+    }
+
+    .contact-row {
+        display: flex; /* Align icon and text horizontally */
+        align-items: center; /* Vertically center items */
+        margin-bottom: 5px; /* Spacing between rows */
+    }
+
+    .contact-row img {
+        width: 20px; /* Adjust icon size as needed */
+        height: auto;
+        margin-right: 5px; /* Space between icon and text */
+    }
+
+    .contact-info-wrapper {
+        display: flex; /* Arrange photo and contact info horizontally */
+        align-items: center; /* Vertically align photo and contact info */
+    }
+
+    .contact-info-wrapper img {
+        width: 50px; /* Adjust photo size as needed */
+        height: auto;
+        margin-right: 10px; /* Spacing between photo and contact info */
+    }
+
+    /* Hero Section Styles */
+    .hero-section {
+      display: flex;
+      padding: 50px 20px;
+      background-color: #FFFAF5;
+      align-items: center;
+    }
+    .hero-content {
+      flex: 1;
+      padding-right: 50px;
+    }
+    .hero-content h2 {  /*  Стиль для заголовка "Салон красоты" */
+        font-size: 2.2em; /* Увеличенный размер (3em) */
+        margin-bottom: 1px;
+    }
+    .hero-content h1 {
+      font-size: 3.5em;
+      margin-bottom: 10px;
+    }
+    .hero-content p {
+      font-size: 2.1em;  /* Увеличенный размер шрифта для основного текста */
+      margin-bottom: 30px;
+    }
+    .hero-image {
+      flex: 1;
+      text-align: center;
+    }
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .button {
+      background-color: transparent;
+      color: #333;
+      border: 1.8px solid #333;
+      padding: 30px 70px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      display: inline-block;
+      font-size: 1.1em;
+    }
+    /* Services Section Styles */
+    .services-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+     .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+       row-gap: 10px; /* Gap between rows */
+      column-gap: -80px; /* Gap between columns (smaller) */
+      margin-top: 10px;
+      justify-items: center;
+    }
+    .service-item {
+      border: 1px solid #855B35;
+      padding: 10px;
+      text-align: center;
+       border-radius: 7px;
+      overflow: hidden;
+        width: 305px; /* Fixed width for the container */
+        height: 310px; /* Fixed height for the container */
+    }
+    .service-item img {
+      width: 300px; /* Fixed width */
+      height: 300px; /* Fixed height */
+      object-fit: cover; /* Ensure the image covers the area, cropping if needed */
+      display: block; /* Remove extra space below images */
+    }
+    /* Footer Styles */
+    footer {
+      background-color: #f2e8dd;
+      padding: 20px; /* Reduced padding for a more compact footer */
+      display: flex;
+      justify-content: space-between; /* Distribute content */
+      align-items: center; /* Vertically center items */
+    }
+    footer p {
+      margin: 0; /* Remove default margins */
+    }
+    footer img {
+      width: 100px; /* Reduced logo width */
+      height: auto;
+    }
+     header nav ul li {
+        margin-left: 110px; /* Increased spacing */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="лого2.png" alt="Logo">
+      <h1></h1> <!-- Replace with actual brand if needed -->
+    </div>
+    <nav>
+      <ul>
+        <li><a href="o hac.html">О нас</a></li>
+        <li><a href="yclygi.html">Услуги</a></li>
+        <li><a href="kon.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="contact-info">
+            <div class="contact-row">
+      <img src="тел.png" alt="Phone Icon">
+      <p>+7(925)-383-04-46</p><p>+7(991)-879-60-84</p>     
+    </div>
+    <div class="contact-info">
+            <div class="contact-row">
+    <img src="ад.png" alt="Phone Icon">
+     <a>Деревня Журавлёво 133</a> 
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h2>Салон красоты</h2>
+      <h1>BROWS&LASH</h1>
+      <p>Пространство красоты, любви и заботы.</p>
+      <a href="za.html" class="button">Записаться</a>
+    </div>
+    <div class="hero-image">
+      <img src="фото.jpg" alt="Hero Image">
+    </div>
+  </section>
+
+  <section class="services-section">
+    <h2>Услуги</h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <img src="классика1.jpg" alt="Наращивание ресниц">
+         <a href="yclygi.html">Наращивание ресниц</a>
+      </div>
+      <div class="service-item">
+        <img src="брови4.jpg" alt="Оформление бровей">
+         <a href="yclygi.html">Окрашевание бровей</a>
+      </div>
+      <div class="service-item">
+        <img src="брови7.jpg" alt="Ламинирование бровей">
+         <a href="yclygi.html">Ламинирование бровей</a>
+      </div>
+      <div class="service-item">
+        <img src="лами1.jpg" alt="Ламинирование ресниц">
+         <a href="yclygi.html">Ламинирование ресниц</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <h1>BROWS&LASH</h1>
+      <p>ВТ-СБ: 10:00-19:00</p>
+      <p>ВС-ПН: выходной</p>
+    </div>
+    <img src="лого2.png" alt="Logo">
+  </footer>
+
+</body>
+</html>
